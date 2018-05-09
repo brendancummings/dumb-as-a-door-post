@@ -1,0 +1,185 @@
+header{
+	background: radial-gradient(#EDAB51, #E99626);
+	padding: 0px;
+	margin: 0px;
+}
+
+.logo{
+	max-width: 300px;
+	padding: 30px;
+	margin: 0px;
+}
+
+h5{
+	text-align: center;
+	margin: 0px;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #EDCD83;
+	font-size: 24px;
+}
+
+a{
+	color: #291E14;
+	text-decoration: none;
+	font-size: 1.5em; 
+	padding: auto;
+	margin: auto;
+	font-family: 'Fascinate Inline', cursive;
+}
+
+.nav{
+	width: 33%;
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+.nav3{
+	float: center;
+}
+
+nav{
+	width: 100%;
+	background-color: #D56A27;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+#clearfix::after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+.wrapper{
+	width: 93%;
+	margin: 0 auto;
+	/*background-color: red;*/
+}
+
+.ftimg{
+	width: 25%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 0px;
+	padding: 0px; 
+	padding-bottom: 15px;
+}
+
+footer{
+	background-color: #291E14;
+	color: #EDCD83;
+	text-align: center;
+}
+
+h3{
+	font-weight: normal;
+	font-family: 'Dosis', sans-serif;
+	padding: 10px;
+	padding-bottom: 0px;
+}
+
+.sticky{
+ 	position: sticky;
+  	top: 0px;
+  	margin: 0px;
+}
+
+.dropdown{
+	display: none;
+ 	position: sticky;
+  	top: 0px;
+  	margin: 0px;
+}
+
+#smlscrn{
+	display: none;
+}
+
+@media(max-width: 700px){
+	.wrapper{
+		width: 92%;
+	}
+	.ftimg{
+		width: 60%;
+	}
+	#smlscrn{
+		display: block;
+		clear: both;
+		width: 90%;
+		margin: 0 auto;
+		margin-top: 10px;
+	}
+	#smlscrn::after{
+		visibility: hidden;
+		display: block;
+		font-size: 0;
+		content: "";
+		clear: both;
+		height: 0;
+	}
+	nav{
+		display: none;
+	}
+	.dropdown{
+		display: inline-block;
+		width: 100%;
+		max-height: 50px;
+		background-color: #D56A27;
+		margin-bottom: 0px;
+	}
+
+	.dropbtn {
+    	background-color: #D56A27;
+    	font-size: 16px;
+    	border: none;
+    	cursor: pointer;
+    	width: 15%;
+    	max-width: 50px;
+    	padding: 0px;
+    	margin: 0px;
+    	max-height: 50px;
+	}
+
+	.dropbtn:hover, .dropbtn:focus {
+    	background-color: #291E14;
+	}
+
+/* Dropdown Content (Hidden by Default) */
+	.dropdown-content {
+	    display: none;
+    	position: absolute;
+    	background-color: #f1f1f1;
+    	min-width: 160px;
+    	width: 100%;
+    	margin-top: 0px;
+    	box-shadow: 8px 8px 16px 8px rgba(0,0,0,0.2);
+    	z-index: 1;
+	}
+
+/* Links inside the dropdown */
+	.dropdown-content a {
+		background-color: #EDCD83;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	}
+
+/* Change color of dropdown links on hover */
+	.dropdown-content a:hover {
+		background-color: #E99626;
+	}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {
+		display:block;
+	}
+}
